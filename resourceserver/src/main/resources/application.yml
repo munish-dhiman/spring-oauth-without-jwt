@@ -1,0 +1,11 @@
+server.port: 8091
+security.oauth2:
+  client:
+    client-id: demo_client
+    client-secret: notasecret
+  resource:
+    id: resource_server
+    token-info-uri: http://localhost:8090/oauth/check_token
+
+logging.level:
+  org.springframework: INFO
